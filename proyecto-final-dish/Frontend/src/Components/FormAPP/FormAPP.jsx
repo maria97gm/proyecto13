@@ -2,7 +2,7 @@ import { useForm } from 'react-hook-form'
 import './FormAPP.css'
 
 import React, { useState } from 'react'
-import { API } from '../../utils/API/API.JS'
+import { API } from '../../utils/API/api.js'
 import RenderErrors from '../RenderErrors/RenderErrors'
 import { useNavigate } from 'react-router-dom'
 

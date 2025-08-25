@@ -2,7 +2,7 @@ import React from 'react'
 import './FormMenu.css'
 import { useForm } from 'react-hook-form'
 import RenderErrors from '../RenderErrors/RenderErrors'
-import { API } from '../../utils/API/API.JS'
+import { API } from '../../utils/API/api.js'
 import { useNavigate } from 'react-router-dom'
 
 const FormMenu = () => {
