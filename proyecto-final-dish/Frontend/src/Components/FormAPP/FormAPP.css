@@ -17,3 +17,9 @@ form h2 {
 .error-message {
   font-weight: 700;
 }
+
+@media screen and (max-width:900px){
+  .form{
+    width:inherit
+  }
+}
