@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import { API } from '../../utils/API/api.js'
 import RenderErrors from '../RenderErrors/RenderErrors'
 import { useNavigate } from 'react-router-dom'
+import Loading from '../Loading/Loading' 
 
 const FormAPP = ({ message, reviewToken }) => {
   const {
@@ -16,11 +17,13 @@ const FormAPP = ({ message, reviewToken }) => {
   const navigate = useNavigate()
   const [loginError, setLoginError] = useState('')
   const [registerError, setRegisterError] = useState('')
+  const [loading, setLoading] = useState(false) 
 
   const onSubmit = async (data, event) => {
     const submitter = event.nativeEvent.submitter
     setLoginError('')
     setRegisterError('')
+    setLoading(true) 
     try {
       if (submitter.name === 'login') {
         const response = await API('/api/v1/users/login', 'POST', data)
@@ -64,10 +67,14 @@ const FormAPP = ({ message, reviewToken }) => {
       }
     } catch (error) {
       console.error(`Error en ${submitter.name}:`, error)
+    } finally {
+      setLoading(false) 
     }
   }
+
   return (
     <div>
+      {loading && <Loading />} 
       <form onSubmit={handleSubmit(onSubmit)}>
         <h2>{message}</h2>
         <input
