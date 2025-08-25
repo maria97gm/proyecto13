@@ -18,8 +18,4 @@ form h2 {
   font-weight: 700;
 }
 
-@media screen and (max-width:900px){
-  .form{
-    width:inherit
-  }
-}
+
