@@ -16,7 +16,7 @@ export const API = async (
       }
     }
 
-    const response = await fetch(`proyecto13-omega.vercel.app${endpoint}`, {
+    const response = await fetch(`https://proyecto13-omega.vercel.app${endpoint}`, {
       method,
       headers,
       body: body ? JSON.stringify(body) : undefined
