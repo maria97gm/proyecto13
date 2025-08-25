@@ -7,7 +7,7 @@ const getRecipe = async (req, res, next) => {
       .sort({ createdAt: -1 })
     return res.status(200).json(allRecipes)
   } catch (error) {
-    console.error('Error al obtener recetas:', error)
+    console.error('Error al obtener recetas:', error.message)
     res.status(404).json('No hemos podido acceder a las recetas')
   }
 }
