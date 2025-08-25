@@ -16,11 +16,13 @@ export const API = async (
       }
     }
 
-    const response = await fetch(`http://localhost:3000${endpoint}`, {
+    const response = await fetch(`proyecto13-omega.vercel.app${endpoint}`, {
       method,
       headers,
       body: body ? JSON.stringify(body) : undefined
     })
+         // http://localhost:3000${endpoint}
+
 
     const data = await response.json().catch(() => null)
 
