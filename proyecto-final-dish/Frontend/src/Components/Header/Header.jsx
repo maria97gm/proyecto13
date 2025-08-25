@@ -15,7 +15,7 @@ const Header = () => {
     return (
       <header>
         <Link to='/'>
-          <img src='/src/assets/logo.png' alt='Logo' />
+          <img src='/assets/logo.png' alt='Logo' />
         </Link>
 
         <button
@@ -82,7 +82,7 @@ const Header = () => {
   return (
     <header>
       <Link to='/'>
-        <img src='/src/assets/logo.png' alt='Logo' />
+        <img src='/assets/logo.png' alt='Logo' />
       </Link>
       <button
         className='hamburger'

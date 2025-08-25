@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div>
       <footer>
-        <img src='/src/assets/logo.png' alt='Logo' />
+        <img src='/assets/logo.png' alt='Logo' />
         <p>info@thefinaldish.es</p>
         <p>(+34) 600 000 000</p>
         <p>&copy; 2025 The Final Dish. Todos los derechos reservados.</p>

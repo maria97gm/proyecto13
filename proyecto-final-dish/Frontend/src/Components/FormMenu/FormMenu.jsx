@@ -48,7 +48,7 @@ const FormMenu = () => {
   return (
     <>
       <div className='flex form-menu'>
-        <img src='/src/assets/rock2.jpg' alt='Generar menú' />
+        <img src='/assets/rock2.jpg' alt='Generar menú' />
         <h2>
           Rellena el formulario que se encuentra más abajo para obtener tu menú
           semanal.
