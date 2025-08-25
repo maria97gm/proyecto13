@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+:root {
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  a,
+  label,
+  ul,
+  ol,
+  span,
+  button {
+    font-family: 'Comfortaa';
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  /* BORDER RADIUS */
+  --rtc-br: 30px;
+
+  /*COLORS*/
+
+  --rtc-color1: #75a195;
+  --rtc-color2: #b3cda8;
+  --rtc-color3: #d8dbbd;
+
+  /* SPACINGS */
+  --rtc-margin-xs: 10px;
+  --rtc-margin-s: 20px;
+  --rtc-margin-m: 30px;
+  --rtc-margin-l: 40px;
+  --rtc-margin-xl: 50px;
+  --rtc-margin-section: 100px;
+
+  --rtc-padding-xs: 10px;
+  --rtc-padding-s: 20px;
+  --rtc-padding-m: 30px;
+  --rtc-padding-l: 40px;
+  --rtc-padding-xl: 50px;
+
+  --rtc-gap-xs: 10px;
+  --rtc-gap-s: 20px;
+  --rtc-gap-m: 30px;
+  --rtc-gap-l: 40px;
+  --rtc-gap-xl: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+button {
+  background: var(--rtc-color3);
+  color: var(--rtc-color1);
+  border-radius: 20px;
+  padding: 14px 30px;
+  border: none;
+  transition: all 0.5s ease;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: var(--rtc-color1);
+  color: var(--rtc-color3);
+  transform: scale(1.1);
+}
+
+input,
+select,
+textarea {
+  padding: 18px;
+  background: #fff;
+  border: none;
+  display: flex;
+  margin: 20px auto;
+  width: 400px;
+}
+
+h1 {
+  padding: 50px 0;
+}

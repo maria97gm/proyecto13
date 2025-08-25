@@ -1,0 +1,23 @@
+.carousel {
+  background: var(--rtc-color2);
+  padding: 120px 0;
+  margin: 80px 0;
+}
+
+.carousel h2,
+.carousel h3 {
+  color: #fff;
+  padding-bottom: 30px;
+}
+
+.carousel p {
+  font-size: 22px;
+
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.slick-dots li button:before {
+  font-size: 22px !important;
+}

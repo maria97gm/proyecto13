@@ -1,0 +1,4 @@
+.create-menu form {
+  width: inherit;
+  margin-top: var(--rtc-margin-m);
+}

@@ -1,0 +1,42 @@
+.flex {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 60px;
+}
+.flex img {
+  width: 400px;
+  height: 400px;
+}
+
+.some-recipes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 60px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .flex form {
+    width: inherit;
+  }
+  .some-recipes > div {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .some-recipes > div {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}

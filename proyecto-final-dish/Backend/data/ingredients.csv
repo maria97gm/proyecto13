@@ -1,0 +1,66 @@
+id;name;unit;isLactosaFree;isVegan;isGlutenFree
+1;Lechuga;g;true;true;true
+2;Tomate;g;true;true;true
+3;Aceite de oliva;ml;true;true;true
+4;Cebolla;g;true;true;true
+5;Zanahoria;g;true;true;true
+6;Arroz blanco;g;true;true;true
+7;Pollo;g;true;false;true
+8;Curry en polvo;g;true;true;true
+9;Lentejas cocidas;g;true;true;true
+10;Tortillas de maíz;unidad;true;true;true
+11;Calabacín;g;true;true;true
+12;Espinaca;g;true;true;true
+13;Huevo;unidad;true;false;true
+14;Yogur natural;g;false;false;true
+15;Avena sin gluten;g;true;true;true
+16;Plátano;g;true;true;true
+17;Leche vegetal;ml;true;true;true
+18;Proteína en polvo;g;true;false;true
+19;Quinoa;g;true;true;true
+20;Pimiento rojo;g;true;true;true
+21;Pimiento verde;g;true;true;true
+22;Champiñones;g;true;true;true
+23;Pasta integral;g;true;true;false
+24;Atún en conserva;g;true;false;true
+25;Harina de trigo;g;true;true;false
+26;Queso rallado;g;false;false;true
+27;Salsa de tomate;ml;true;true;true
+28;Brócoli;g;true;true;true
+29;Pan integral;unidad;true;true;false
+30;Tofu;g;true;true;true
+31;Soja texturizada;g;true;true;true
+32;Garbanzos cocidos;g;true;true;true
+33;Leche de vaca;ml;false;false;true
+34;Pavo;g;true;false;true
+35;Sardinas en lata;g;true;false;true
+36;Harina de avena;g;true;true;true
+37;Mantequilla;g;false;false;true
+38;Nata vegetal;ml;true;true;true
+39;Sémola de maíz;g;true;true;true
+40;Salsa de soja;ml;true;true;false
+41;Limón;ml;true;true;true
+42;Azúcar moreno;g;true;true;true
+43;Ajo;g;true;true;true
+44;Aguacate;g;true;true;true
+45;Semillas de chía;g;true;true;true
+46;Manzana;g;true;true;true
+47;Fresas;g;true;true;true
+48;Miel;g;true;false;true
+49;Cacao en polvo;g;true;true;true
+50;Levadura seca;g;true;true;true
+51;Almendras;g;true;true;true
+52;Kale;g;true;true;true
+53;Semillas de lino;g;true;true;true
+54;Judías negras cocidas;g;true;true;true
+55;Huevo cocido;unidad;true;false;true
+56;Granola sin gluten;g;true;false;true
+57;Pan de espelta;unidad;true;true;false
+58;Queso fresco;g;false;false;true
+59;Tomate en rodajas;g;true;true;true
+60;Copos de maíz;g;true;true;true
+61;Semillas de cáñamo;g;true;true;true
+62;Levadura nutricional;g;true;true;true
+63;Mantequilla de cacahuete;g;true;true;true
+64;Harina de garbanzo;g;true;true;true
+65;Espelta;g;true;true;false

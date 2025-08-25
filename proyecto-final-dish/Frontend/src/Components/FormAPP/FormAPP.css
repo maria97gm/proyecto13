@@ -1,0 +1,19 @@
+form {
+  background: var(--rtc-color2);
+  border-radius: var(--rtc-br);
+  padding: 60px 20px;
+  width: 620px;
+  margin: 0 auto;
+}
+
+button {
+  margin: var(--rtc-padding-xs);
+}
+
+form h2 {
+  padding-bottom: var(--rtc-padding-m);
+}
+
+.error-message {
+  font-weight: 700;
+}
