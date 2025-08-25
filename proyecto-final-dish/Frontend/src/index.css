@@ -94,7 +94,7 @@ h1 {
   input,
   select,
   textarea,
-  .form {
+  form {
     width: inherit;
   }
 }
