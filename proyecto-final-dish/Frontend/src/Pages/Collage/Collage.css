@@ -46,3 +46,9 @@
   font-size: 0.85rem;
   z-index: 2;
 }
+
+@media screen and (max-width: 1023px) {
+  .collage {
+    margin: 0;
+  }
+}
