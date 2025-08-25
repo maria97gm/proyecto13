@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div>
       <div className='flex'>
-        <img src='/src/assets/rock.jpg' alt='Bienvenida' />
+        <img src='/assets/rock.jpg' alt='Bienvenida' />
         <FormAPP
           message={
             'Inicia sesión o regístrate para disfrutar de todas nuestras ventajas'
