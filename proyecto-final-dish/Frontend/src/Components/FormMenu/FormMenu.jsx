@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './FormMenu.css'
 import { useForm } from 'react-hook-form'
 import RenderErrors from '../RenderErrors/RenderErrors'
 import { API } from '../../utils/API/api.js'
 import { useNavigate } from 'react-router-dom'
+import Loading from '../Loading/Loading'
 
 const FormMenu = () => {
   const {
@@ -13,12 +14,12 @@ const FormMenu = () => {
   } = useForm()
 
   const navigate = useNavigate()
+  const [loading, setLoading] = useState(false)
 
   const onSubmit = async (data) => {
-    console.log(data)
+    setLoading(true)
     try {
       const response = await API('/api/v1/menus/get-menu', 'POST', data, true)
-      console.log('Respuesta de la API:', response)
       localStorage.setItem('myMenu', JSON.stringify(response))
 
       const simplifiedMenu = response.weekMenu.map((day) => ({
@@ -26,7 +27,7 @@ const FormMenu = () => {
         recipes: day.meals.map((recipe) => recipe._id)
       }))
 
-      const saveResponse = await API(
+      await API(
         '/api/v1/menus/save-menu',
         'POST',
         {
@@ -37,12 +38,17 @@ const FormMenu = () => {
         },
         true
       )
-      console.log('Respuesta al guardar menú:', saveResponse)
 
       navigate('/my-menu')
     } catch (error) {
       console.error('Error en la petición:', error)
+    } finally {
+      setLoading(false)
     }
+  }
+
+  if (loading) {
+    return <Loading /> 
   }
 
   return (
